@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Schedule 🧀 Cheese-Host</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    margin: 0;
+    padding: 20px;
+    color: #1b1b1b;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffda76;
+  }
+
+  .grid-wrapper {
+    overflow-x: auto;
+  }
+
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(24, 80px);
+    gap: 2px;
+  }
+
+  .schedule-grid div {
+    border: 1px solid #ffb03b;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .header-cell {
+    background-color: #ff7f50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .day-cell {
+    background-color: #ff9f5b;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  .bubble {
+    padding: 2px 5px;
+    border-radius: 6px;
+    margin: 1px;
+    min-width: 40px;
+    font-size: 0.7rem;
+  }
+
+  <!-- Servers --->
+  
+  .online-java { background-color: #ffd966; color: #333; }
+  .online-bedrock { background-color: #ffb84d; color: #333; }
+  .online-modded { background-color: #ff9e4d; color: #333; }
+  .offline { background-color: #ff4d4d; color: white; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cheese-Host Schedule</h1>
+  <a href="main.html">Back</a>
+</header>
+
+<div class="grid-wrapper">
+  <div class="schedule-grid">
+    <div class="header-cell"></div>
+
+    <div class="header-cell">00:00</div>
+    <div class="header-cell">01:00</div>
+    <div class="header-cell">02:00</div>
+    <div class="header-cell">03:00</div>
+    <div class="header-cell">04:00</div>
+    <div class="header-cell">05:00</div>
+    <div class="header-cell">06:00</div>
+    <div class="header-cell">07:00</div>
+    <div class="header-cell">08:00</div>
+    <div class="header-cell">09:00</div>
+    <div class="header-cell">10:00</div>
+    <div class="header-cell">11:00</div>
+    <div class="header-cell">12:00</div>
+    <div class="header-cell">13:00</div>
+    <div class="header-cell">14:00</div>
+    <div class="header-cell">15:00</div>
+    <div class="header-cell">16:00</div>
+    <div class="header-cell">17:00</div>
+    <div class="header-cell">18:00</div>
+    <div class="header-cell">19:00</div>
+    <div class="header-cell">20:00</div>
+    <div class="header-cell">21:00</div>
+    <div class="header-cell">22:00</div>
+    <div class="header-cell">23:00</div>
+
+    <!-- Monday -->
+    <div class="day-cell">Monday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+    <!-- Tuesday -->
+    <div class="day-cell">Tuesday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+    <!-- Wednesday -->
+    <div class="day-cell">Wednesday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+    <!-- Thursday -->
+    <div class="day-cell">Thursday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+    <!-- Friday -->
+    <div class="day-cell">Friday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+    <!-- Saturday -->
+    <div class="day-cell">Saturday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+    <!-- Sunday -->
+    <div class="day-cell">Sunday</div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+    <div><div class="bubble offline">Offline</div></div>
+
+  </div>
+</div>
+
+</body>
+</html>
