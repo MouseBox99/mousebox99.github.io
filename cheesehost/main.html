@@ -17,21 +17,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-shadow: 2px 2px #ffda76;
     }
 
     h2 {
       font-size: 1.5rem;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
 
     p {
@@ -39,51 +39,101 @@
       margin-bottom: 30px;
     }
 
-    a.button {
-      display: inline-block;
-      background-color: #ff7f50;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: transform 0.2s, background-color 0.2s;
-    }
-
-    a.button:hover {
-      background-color: #ffa94d;
-      transform: scale(1.1);
-    }
     .button-row {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 40px;
     }
 
     .button {
-    background-color: #ff7f50;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s, background-color 0.2s;
+      background-color: #ff7f50;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.2s;
     }
 
     .button:hover {
-    background-color: #ffa94d;
-    transform: scale(1.05)
+      background-color: #ffa94d;
+      transform: scale(1.05);
+    }
+
+    /* 🧀 Cheese info boxes section */
+    .info-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .box h3 {
+      color: #ff7f50;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #5f5f5f;
+      font-size: 14px;
+      padding-bottom: 30px;
     }
   </style>
 </head>
 <body>
   <h1>Cheese-Host</h1>
-  <h2>Free, Private & Help for my friends</h2>
-        <div class="button-row">
-        <a href="#" class="button">Schedule</a>
-        <a href="#" class="button">Contant</a>
-        <a href="#" class="button">About</a>
+  <h2>By a friend, for friends.</h2>
+
+  <div class="button-row">
+    <a href="schedule.html" class="button">Schedule</a>
+  </div>
+
+  <div class="info-boxes">
+    <div class="box">
+      <h3>Game hosting</h3>
+      <p>Povieš mi len akú hru chceš, akú edíciu, či modovanú alebo nie a ja ti ju nastavím! 😎</p>
     </div>
+
+    <div class="box">
+      <h3>Maintance and fixes</h3>
+      <p>Aktualizácie, opravy, reštarty. Všetko spravím ja, ty len hraj. 🧑‍💻</p>
+    </div>
+
+    <div class="box">
+      <h3>Help and Support</h3>
+      <p>Nechápeš nejaku hru? Minecraft? Mody? Nevieš ako sa pripojiť? Napíš mi a ja ti pomôžem. 💛</p>
+    </div>
+
+    <div class="box">
+      <h3>It's free.</h3>
+      <p>Nič neplatíš. Žiadne reklamy. Len kamaráti, hry a dobrá nálada. 🧀🎉</p>
+    </div>
+  </div>
+
+  <footer>2025 Cheese-Host — random project</footer>
 </body>
 </html>
+ 
